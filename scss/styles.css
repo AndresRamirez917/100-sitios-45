@@ -208,6 +208,9 @@ form .button-3 {
   margin: 0 auto;
 }
 
+#directions {
+  margin-top: 2em;
+}
 #directions .directions-row {
   display: flex;
   text-align: center;
