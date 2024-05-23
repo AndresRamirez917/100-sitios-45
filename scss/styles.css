@@ -25,6 +25,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
+  color: #000;
 }
 
 ul {
@@ -50,19 +51,36 @@ ul {
 
 .box {
   width: 500px;
-  height: 200px;
+  height: 250px;
   color: #fff;
   padding: 50px;
 }
 
+form .form-group {
+  margin-bottom: 1em;
+  color: #fff;
+}
+form .form-control {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+form .button-3 {
+  margin: 1rem 0;
+  width: 100%;
+  background: #323232;
+  color: #fff;
+}
+
 #mainheader .navbar .logo {
   float: left;
-  margin: 2em;
+  margin: 1em 0;
   font-size: 2rem;
 }
 #mainheader .navbar ul {
   float: right;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 #mainheader .navbar ul li {
   display: inline-block;
@@ -71,6 +89,9 @@ ul {
 
 #showcase {
   background: url("/img/showcase.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10rem;
   text-align: center;
   color: #fff;
@@ -97,6 +118,7 @@ ul {
 }
 #reservation .reservation-content .reservation-button .button-2 {
   background: gray;
+  color: #fff;
 }
 
 #services .services-row {
@@ -122,9 +144,77 @@ ul {
   background-size: cover;
 }
 
+#about {
+  background: orange;
+  padding: 50px;
+}
+#about .about-row {
+  display: flex;
+  text-align: center;
+  color: #fff;
+  gap: 30px;
+}
+#about .about-row .about-text {
+  text-align: left;
+  width: 50%;
+  font-size: 1rem;
+  line-height: 20px;
+}
+#about .about-row .about-text h2 {
+  margin-bottom: 1em;
+}
+#about .about-row .about-img img {
+  width: 70%;
+}
+
+#opinions {
+  background: url("/img/testimonials.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#opinions .opinions-row {
+  padding: 80px;
+}
+#opinions .opinions-row h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+}
+#opinions .opinions-row .card {
+  background: rgba(180, 180, 180, 0.356);
+  display: flex;
+  margin-bottom: 30px;
+  padding: 10px;
+  color: #fff;
+}
+#opinions .opinions-row .card img {
+  width: 5%;
+  border-radius: 50%;
+}
+
+#contact {
+  background: orange;
+}
+#contact h2 {
+  margin: 1em 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+#contact form {
+  width: 70%;
+  margin: 0 auto;
+}
+
 #directions .directions-row {
   display: flex;
   text-align: center;
+}
+#directions .directions-row .box h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 #directions .directions-row .box-1 {
   background: url("/img/contact-feature-1.jpg");

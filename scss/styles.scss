@@ -28,6 +28,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
+    color: #000;
 }
 
 ul {
@@ -54,9 +55,31 @@ ul {
 .box {
     
     width: 500px;
-    height: 200px;
+    height: 250px;
     color: #fff;
     padding: 50px;
+}
+
+form {
+
+    .form-group {
+        margin-bottom: 1em;
+        color: #fff;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .button-3 {
+        margin: 1rem 0;
+        width: 100%;
+        background: #323232;
+        color: #fff;
+    }
 }
 
 //mainheader
@@ -66,13 +89,13 @@ ul {
 
         .logo {
             float: left;
-            margin: 2em;
+            margin: 1em 0;
             font-size: 2rem;
         }
 
         ul {
             float: right;
-            margin-top: 4em;
+            margin-top: 3em;
 
             li {
                 display: inline-block;
@@ -86,6 +109,9 @@ ul {
 //showcase
 #showcase {
     background: url("/img/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10rem;
     text-align: center;
     color: #fff;
@@ -115,6 +141,7 @@ ul {
         .reservation-button {
             .button-2 {
                 background: gray;
+                color: #fff;
             }
         }
     }
@@ -151,12 +178,98 @@ ul {
     }
 }
 
+//about
+#about {
+background: orange;
+padding: 50px;
+    .about-row {
+        display: flex;
+        text-align: center;
+        color: #fff;
+        gap: 30px;
+        .about-text {
+        text-align: left;
+            width: 50%;
+            font-size: 1rem;
+            line-height: 20px;
+
+            h2 {
+                margin-bottom: 1em;
+            }
+        }
+
+        .about-img {
+            
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+//opinions
+#opinions {
+    background: url("/img/testimonials.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  
+    .opinions-row {
+        padding: 80px;
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-weight: lighter;
+            font-size: 30px;
+        }
+      
+        .card {
+            background: rgba(180, 180, 180, 0.356);
+            display: flex;
+            margin-bottom: 30px;
+            padding: 10px;
+            color: #fff;
+
+            img {
+                width: 5%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+//contact
+#contact {
+    background: orange;
+
+    h2 {
+        margin: 1em 0;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    form {
+        width: 70%;
+        margin:  0 auto;
+    }
+}
+
 //directions
 #directions {
 
     .directions-row {
         display: flex;
         text-align: center;
+
+        .box {
+           
+            h2 {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
         .box-1 {
             background: url("/img/contact-feature-1.jpg");
             background-position: center;
